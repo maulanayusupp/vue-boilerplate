@@ -1,0 +1,218 @@
+.cards {
+	.card {
+		margin-bottom: 3rem;
+		// min-width: 220px;
+	}
+}
+
+.card {
+	border: 0;
+	border-radius: 9px;
+	box-shadow: $box-shadow;
+	// box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.08);
+	// box-shadow: 0 1px 4px #E5E9F2;
+	transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+	overflow: hidden;
+
+	@media (hover) {
+		&:hover {
+			box-shadow: $box-shadow-hover;
+			// box-shadow: 0 0 12px 10px rgba(0,0,0,.08);
+			// box-shadow: 0 1px 4px 3px #E5E9F2;
+			// transform: translate(0, -5px);
+			transition-delay: 0s !important;
+		}
+	}
+
+	&--narrow {
+		.card-body {
+			padding: 1.5rem 1.625rem;
+		}
+
+		.card-actions {
+			padding: 0 1.625rem;
+		}
+	}
+
+	&--green {
+		color: #fff;
+		background-color: role-color('teacher', 'dark');
+	}
+
+	&--blue {
+		color: #fff;
+		background-color: #0082C5;
+	}
+
+	&--brown {
+		color: #fff;
+		background-color: #78664F;
+	}
+
+	&--red {
+		color: #fff;
+		background-color: #BB0B0B;
+	}
+
+	&--blue-light {
+		color: #fff;
+		background-color: #0AA9D4;
+	}
+
+	&--large {
+		min-height: 313px;
+	}
+
+	&.is-dimmed {
+		border: 1px solid #CECECE;
+		background-color: #E5E5E5;
+
+		.card-footer {
+			background-color: rgba(0, 0, 0, 0.03);
+		}
+	}
+
+	&-menu {
+		position: absolute;
+		top: .75rem;
+		right: .75rem;
+	}
+
+	&-overlay {
+		position: absolute;
+		bottom: 0;
+		padding: .5rem 1rem;
+		width: 100%;
+		color: #fff;
+		text-align: center;
+		background-color: rgba(51, 51, 51, 0.5);
+	}
+}
+
+.card-body {
+	padding: 1.125rem;
+	// padding: 1.125rem 1.375rem;
+	// padding: 1.375rem;
+}
+
+.card-featured {
+	margin-bottom: 1rem;
+	font-size: 5rem;
+	line-height: 1;
+}
+
+.card-info {
+	margin-bottom: .5rem;
+	min-height: 3em;
+}
+
+.card-footer {
+	min-height: 85px;
+	border-top: 0;
+
+	&-plain {
+		padding: .8125rem;
+		border-top: 1px solid $border-color;
+	}
+
+	.btn {
+		color: inherit !important;
+		min-width: 125px;
+		background-color: rgba(0, 0, 0, 0.49);
+		text-transform: uppercase;
+		text-decoration: none !important;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	.bg-transparent {
+		color: $text-primary !important;
+	}
+}
+
+.card-title {
+	font-size: 1.125rem;
+}
+
+.card-meta {
+	color: #A5A5A5 !important;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.card-date {
+	font-size: .9em;
+	color: #A5A5A5;
+}
+
+.card-actions {
+	padding: 0 1.375rem;
+	height: 3.375rem;
+	border-top: 1px solid #D8D8D8;
+
+	.text {
+		font-size: 0.75rem;
+	}
+}
+
+.card-number {
+	&.is-loading {
+		min-height: 69px;
+	}
+}
+
+.card-plain {
+	box-shadow: none;
+}
+
+.action-card {
+	min-height: 215px;
+	// min-height: 120%;
+	text-align: center;
+	box-shadow: none;
+	cursor: pointer;
+
+	.card-body {
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+
+	&-icon {
+		margin: auto;
+		margin-top: 8px;
+		margin-bottom: 14px;
+		width: 100%;
+		max-width: 65px;
+		height: 65px;
+		// padding-bottom: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	&-number {
+		display: inline-block;
+		margin-bottom: 3px;
+		padding: 2px 15px;
+		border-radius: 25px;
+		color: #fff;
+		font-size: 13px;
+		background-color: rgba(0, 0, 0, 0.45);
+	}
+
+	&-text {
+		color: #000;
+	}
+}
+
+.cards-slider {
+	.action-card-icon {
+		margin-top: 25px;
+	}
+}
+
+.card-box-link {
+	text-decoration: none !important;
+}

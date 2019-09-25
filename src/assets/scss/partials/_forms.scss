@@ -1,0 +1,16 @@
+.form {
+}
+
+.form-control {
+	&-plain {
+		padding: 0;
+		border: 0;
+		background-color: transparent;
+
+		&:focus {
+			border: 0;
+			box-shadow: none;
+			background-color: transparent;
+		}
+	}
+}

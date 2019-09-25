@@ -1,0 +1,75 @@
+$border-color: #E1E1E1;
+
+.dnd-uploader {
+	display: block;
+	margin-top: 1rem;
+	padding: 2rem;
+	width: 100%;
+	text-align: center;
+	border: 2px dashed $border-color;
+	transition: .2s all ease-in-out;
+	cursor: grab;
+
+	&.is-uploading {
+		cursor: default;
+	}
+
+	&.shrink {
+		padding: 1rem;
+
+		.icon {
+			max-width: 75px;
+		}
+
+		.info {
+			margin-top: .5rem;
+		}
+	}
+
+	&.is-dragged-over {
+		border-width: 3px;
+		border-color: theme-color('primary');
+	}
+
+	> * {
+		pointer-events: none;
+	}
+
+	.icon {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 100px;
+	}
+
+	.info {
+		margin-top: 2rem;
+		font-weight: bold;
+	}
+
+	.input {
+		display: none;
+	}
+
+	&-small {
+		@extend .flex-center-left;
+		padding: 1.5rem !important;
+
+		.icon {
+			margin: 0;
+			max-width: 100px;
+		}
+
+		.info {
+			margin-top: 0;
+			margin-left: 1.5rem;
+		}
+	}
+}
+
+.uploader {
+	&-uploaded {
+		margin-top: 1.5rem;
+		// padding: 2rem;
+		// border: 2px solid $border-color;
+	}
+}

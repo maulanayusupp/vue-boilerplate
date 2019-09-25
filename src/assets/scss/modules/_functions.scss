@@ -1,0 +1,13 @@
+// Get Role Base Color
+@function role-color($role: 'admin', $tone: 'base') {
+	@return map-get(map-get($role-colors, $role), $tone);
+}
+
+// Set CSS Var - https://dev.to/meduzen/write-css-variables-faster-in-scss-1mon
+@function v($var, $fallback: null) {
+	@if ($fallback) {
+		@return var(--#{$var}, #{$fallback});
+	} @else {
+		@return var(--#{$var});
+	}
+}

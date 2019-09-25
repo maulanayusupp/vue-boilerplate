@@ -1,0 +1,27 @@
+$image-width: 50px;
+
+.progress {
+	margin-top: .25rem;
+	border-radius: 3px;
+
+	&-image {
+		margin-right: .75rem;
+		min-width: $image-width;
+		height: $image-width;
+		border-radius: 3px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	&-name {
+		color: #9A9A9A;
+		font-size: 0.75rem;
+	}
+
+	&-status {
+		color: #5A5A5A;
+		font-size: 0.75rem;
+		font-weight: bold;
+	}
+}

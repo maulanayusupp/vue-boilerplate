@@ -1,0 +1,11 @@
+.alert {
+	@extend %alert;
+
+	&-warning {
+		@extend %warning;
+	}
+
+	&--sm {
+		@extend %alerts-small;
+	}
+}

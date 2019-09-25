@@ -1,0 +1,172 @@
+.md-theme-default {
+	a:not(.md-button).btn-secondary {
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.md-button.btn-secondary {
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&.md-field:after {
+		background-color: #D6D6D6;
+	}
+}
+
+.md-field {
+	.label-top {
+		top: 0;
+		font-size: .875rem !important;
+		color: $label-color !important;
+		pointer-events: auto;
+		opacity: 1;
+	}
+
+	>.md-icon {
+		// color: #D8D8D8 !important;
+	}
+
+	&-readonly {
+		&:after {
+			height: 0;
+		}
+
+		.md-input,
+		.md-textarea {
+			margin-top: 5px;
+		}
+	}
+
+	&-short {
+		min-height: 0;
+
+		.md-helper-text {
+			bottom: -20px;
+		}
+	}
+
+	&.md-disabled {
+	}
+
+	&-disabled {
+		opacity: .5;
+	}
+}
+
+.md-field-lg {
+	.label-top {
+		font-size: 1rem !important;
+	}
+
+	.md-input,
+	.md-textarea {
+		margin-top: .25rem;
+		font-size: 1.25rem !important;
+	}
+
+	.md-input {
+		height: 2.25rem;
+		line-height: 2.25rem;
+	}
+
+	.md-textarea {
+		min-height: 2.25rem;
+	}
+}
+
+.md-list-item {
+	&.active {
+		background-color: $grey-100;
+	}
+}
+
+.md-list-item-content {
+	min-height: 40px;
+}
+
+.md-menu-content {
+	z-index: 1021;
+}
+
+.modal-open {
+	.md-menu-content {
+		z-index: 9999;
+	}
+}
+
+.md-button {
+	.md-ripple {
+		padding: 0;
+	}
+
+	&-fluid {
+		width: 100%;
+		min-width: 0;
+	}
+
+	&-plain {
+		padding: 6px;
+		min-width: 0;
+		height: initial;
+	}
+}
+
+.md-datepicker-dialog {
+	height: 286px;
+	z-index: 9999;
+}
+.md-datepicker-body-content {
+	height: 232px !important;
+}
+
+.custom-datepicker {
+	.label {
+		margin-bottom: 6px;
+	}
+
+	.md-datepicker {
+		margin-top: 0;
+		padding-top: 0;
+		min-height: 32px;
+
+		&.disabled {
+			pointer-events: none;
+
+			.md-button {
+				display: none;
+			}
+
+			&:after {
+				height: 0;
+			}
+		}
+	}
+
+	.md-button {
+		top: 0;
+	}
+}
+
+.md-switch {
+	.md-switch-container {
+		width: 45px;
+		height: 26px;
+	}
+
+	&.md-checked {
+		.md-switch-thumb {
+			transform: translate3d(22px,0,0);
+		}
+	}
+}
+
+.md-field-tall {
+	padding-top: 25px;
+}

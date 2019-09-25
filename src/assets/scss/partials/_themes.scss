@@ -1,0 +1,58 @@
+@each $color-key, $color-value in $role-colors {
+	.role-#{$color-key} {
+		.card-footer,
+		.navbar-main,
+		.picture-edit,
+		.pill.active,
+		.progress-bar,
+		.footer {
+			color: color-yiq(map-get($color-value, 'base'));
+			background-color: map-get($color-value, 'base');
+		}
+
+		.navigation-drawer {
+			color: color-yiq(map-get($color-value, 'base'));
+			background-color: map-get($color-value, 'base');
+
+			.nav-link {
+				color: color-yiq(map-get($color-value, 'base'));
+			}
+		}
+
+		.pill.active,
+		.list-page.active {
+			color: color-yiq(map-get($color-value, 'base')) !important;
+			background-color: map-get($color-value, 'base') !important;
+		}
+
+		.tab-toggle.active {
+			border-color: map-get($color-value, 'base') !important;
+		}
+
+		.back-btn {
+			color: map-get($color-value, 'base') !important;
+		}
+
+		.color-role {
+			color: map-get($color-value, 'base');
+		}
+	}
+
+	.color-#{$color-key} {
+		color: map-get($color-value, 'base');
+	}
+
+	.bg-role-#{$color-key} {
+		color: color-yiq(map-get($color-value, 'base'));
+		background-color: map-get($color-value, 'base');
+	}
+}
+
+.role-student,
+.role-branch_leader {
+	// background-color: #fff;
+
+	.page-header {
+		border-bottom: 1px solid #DEDEDE;
+	}
+}

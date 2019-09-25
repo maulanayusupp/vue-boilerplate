@@ -1,0 +1,36 @@
+$narrow-width: 19px;
+$wide-width: 10px;
+$thin-gutter-width: 10px;
+
+.row-narrow {
+	margin-left: -$narrow-width;
+	margin-right: -$narrow-width;
+
+	> .col,
+	> [class*="col-"] {
+		padding-left: $narrow-width;
+		padding-right: $narrow-width;
+	}
+}
+
+.row-wide {
+	margin-left: -$wide-width;
+	margin-right: -$wide-width;
+
+	> .col,
+	> [class*="col-"] {
+		padding-left: $wide-width;
+		padding-right: $wide-width;
+	}
+}
+
+.row-thin {
+	margin-left: -$thin-gutter-width;
+	margin-right: -$thin-gutter-width;
+
+	> .col,
+	> [class*="col-"] {
+		padding-left: $thin-gutter-width;
+		padding-right: $thin-gutter-width;
+	}
+}

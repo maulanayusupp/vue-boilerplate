@@ -1,0 +1,44 @@
+%warning {
+	color: #856404;
+	border-color: #ffeeba !important;
+	background-color: #fff3cd;
+}
+
+%alert {
+	position: relative;
+	padding: .75em 1.25em;
+	margin-bottom: 1em;
+	border: 1px solid transparent;
+	border-radius: .25em;
+}
+
+%alerts-small {
+	padding: .75em 1.25em;
+	font-size: .85em;
+}
+
+%btn-disabled {
+	color: rgba(0,0,0,.26);
+	// font-weight: 600;
+	background-color: #e0e0e0;
+	// border-radius: 4px;
+}
+
+%button-large {
+	padding: .35em 1em;
+	padding-right: 0.7em;
+	width: 100%;
+	// max-width: 18em;
+	font-size: 1.25em;
+	letter-spacing: 1px;
+	white-space: normal;
+	border: 2px solid transparent;
+
+	@media (min-width:568px)  { font-size: 1.6em; }
+}
+
+%bg-image {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}

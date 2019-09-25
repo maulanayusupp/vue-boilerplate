@@ -1,0 +1,14 @@
+.pills {
+	.pill {
+		min-width: 75px;
+	}
+}
+
+.pill {
+	margin-right: 0.625rem;
+	padding: 0 0.75rem;
+	font-size: .875rem;
+	line-height: 2rem;
+	text-transform: capitalize;
+	border: 1px solid #D9D9D9;
+}

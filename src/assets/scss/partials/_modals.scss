@@ -1,0 +1,290 @@
+/*
+* The following styles are auto-applied to elements with
+* transition="modal" when their visibility is toggled
+* by Vue.js.
+*
+* You can easily play with the modal transition by editing
+* these styles.
+*/
+
+.modal-enter {
+	opacity: 0;
+}
+
+.modal-leave-active {
+	opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+	transform: scale(1.1);
+}
+
+.modal-close {
+	cursor: pointer;
+
+	&:hover {
+		color: #000;
+	}
+
+	.material-icons {
+		display: block;
+	}
+}
+
+.modal-empty-data {
+	padding: 1.5em;
+	border-radius: 3px;
+	border: 1px dashed #d1d1d1;
+}
+
+.modal-loader {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.modal-mask {
+	display: table;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	transition: opacity .3s ease;
+	z-index: 9998;
+
+	@include media-breakpoint-down(sm) {
+		// background-color: transparent;
+	}
+}
+
+.modal-wrapper {
+	display: table-cell;
+	// padding-left: 1em;
+	// padding-right: 1em;
+	vertical-align: middle;
+
+	&.has-scroll {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+		overflow-y: auto;
+	}
+
+	@include media-breakpoint-down(md) {
+		background-color: transparent;
+		vertical-align: bottom;
+
+		&.has-scroll {
+			padding-top: 3rem;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.short-modal {
+	.modal-wrapper {
+		&.has-scroll {
+			top: initial;
+		}
+	}
+}
+
+.modal-container {
+	margin: 0 auto;
+	width: 100%;
+	// padding: 1em;
+	background-color: #fff;
+	border-radius: 15px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.2);
+	transition: all .3s ease;
+}
+
+.modal-container-small {
+	max-width: 320px;
+}
+
+.modal-container-small-medium {
+	max-width: 450px;
+}
+
+.modal-container-medium {
+	max-width: 600px;
+}
+
+.modal-container-large {
+	max-width: 930px;
+}
+
+.modal-container-a4 {
+	width: 595px;
+	height: 842px;
+}
+
+.modal-header {
+	padding: .875rem 2rem;
+	color: #555;
+	// background-color: $body-bg;
+	background-color: #F5F5F5;
+	border-bottom: 0;
+	align-items: center;
+
+	h3 {
+		margin: 0;
+		padding: 0;
+		color: #999;
+		font-size: 1.5rem;
+		// text-transform: uppercase;
+
+		.material-icons,
+		.fa-icon {
+			margin-right: .5em;
+			font-size: 1.3em;
+			vertical-align: middle;
+		}
+
+		.fa-icon {
+			position: relative;
+			top: -3px;
+		}
+
+		.text {
+			vertical-align: middle;
+		}
+	}
+}
+
+.modal-subheader {
+	padding: 1rem 1.5rem;
+	background-color: #E4E4E4;
+
+	.search-bar {
+		max-width: 175px;
+	}
+}
+
+.modal-body {
+	padding: 1.5rem 2rem;
+	overflow-wrap: break-word;
+
+	.tab-content {
+		.box {
+			padding: 25px;
+			border-top-left-radius: 0 !important;
+			border-top-right-radius: 0 !important;
+		}
+
+		.btn {
+			font-size: .9em;
+		}
+
+		textarea {
+			font-size: .9em;
+		}
+	}
+
+	.btn {
+		min-width: 90px;
+	}
+
+	.form {
+		.container-fluid {
+			padding-bottom: 2rem;
+		}
+	}
+
+	.scroll-area {
+		@include media-breakpoint-down(md) {
+			height: calc(100vh - 175px) !important;
+			overflow: auto;
+		}
+	}
+}
+
+.modal-footer {
+	padding: 1rem 1.5rem;
+	border-top: 0;
+	background-color: #F6F7FB;
+	justify-content: flex-start;
+
+	.btn {
+		margin-right: .5em;
+		min-width: 90px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.btn-icon {
+		line-height: 1;
+	}
+
+	@include media-breakpoint-up(sm) {
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.modal-header,
+	.modal-body,
+	.modal-footer {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.modal-header {
+		background-color: transparent;
+		border-bottom: 1px solid $border-color;
+
+		h3 {
+			font-size: 1rem;
+		}
+	}
+}
+
+.confirmation-modal {
+	.modal-close {
+		display: none;
+	}
+
+	.modal-footer {
+		@include media-breakpoint-down(lg) {
+			.btn {
+				width: 50%;
+			}
+		}
+	}
+}
+
+.list-options-modal {
+	.scroll-area {
+		@include media-breakpoint-down(md) {
+			max-height: calc(400px - 116px) !important;
+			overflow: auto;
+		}
+	}
+
+	.modal-footer {
+		min-height: 68px;
+		justify-content: space-between;
+	}
+}
+
+.modal-default-button {
+	float: right;
+}
+
+.modal-header-full {
+	.modal-header {
+		padding: 5px;
+	}
+}

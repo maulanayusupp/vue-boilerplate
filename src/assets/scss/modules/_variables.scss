@@ -1,0 +1,67 @@
+$green: #10B196;
+$green-light: #4cd964;
+$green-soft: #00E9C2;
+// $orange: #FFE17D;
+$orange: #FF955F;
+$yellow: #FFFF51;
+$yellow-dark: #E4FF7D;
+$red: #F92323;
+$red-light: #FF7D7D;
+$blue: #1989F8;
+$blue-light: #4AD6EC;
+$blue-soft: #38B7FF;
+$grey: #d7d7da;
+$grey-light: #F5F5F5;
+$grey-100: #d2d2d2;
+$cyan: #75cfd8;
+$cyan-dark: #62bbc3;
+
+$color-primary: $blue;
+$color-error: $red;
+
+$text-primary: #222;
+$text-secondary: #A5A5A5;
+$text-info: #0EC5F6;
+$text-danger: #FF1313;
+// $label-color: #ADBBC7;
+$label-color: #899BAA;
+// $color-placeholder: #757575;
+$color-placeholder: #B2B2B2;
+$tooltip-bg: #4e4e4e;
+$border-color: #D6D6D6;
+
+$bgr-color-grey: #eef1f3;
+$bgr-color-black: #222629;
+$bgr-color-brown: #dad6ce;
+$bgr-color-blue: #edf3f3;
+$bgr-color-green: #edfdeb;
+
+$loader-color: #f3f3f3;
+
+$header-title-size: 20px;
+
+$color-student: #0EC5F6;
+$color-student-dark: #01A0CB;
+
+$role-colors: (
+	'admin': (
+		'dark': #C60000,
+		'base': #C60000,
+	),
+	'teacher': (
+		'dark': #008B60,
+		'base': #008B60,
+	),
+	'student': (
+		'dark': #01A0CB,
+		'base': #0EC5F6,
+	),
+	'branch_leader': (
+		'dark': #01A0CB,
+		'base': #0EC5F6,
+	),
+);
+
+// $box-shadow: 0 0 8px #E5E9F2;
+$box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+$box-shadow-hover: 0 0 13px rgba(0, 0, 0, 0.2);
