@@ -5,6 +5,7 @@
 				<div class="modal-wrapper" :class="{ 'has-scroll': hasScroll }">
 					<div class="modal-container" :class="`modal-container-${size}`">
 						<div class="modal-header" v-if="$slots.header">
+							<!-- this is modal header -->
 							<slot name="header">
 								Modal Header
 							</slot>
@@ -15,13 +16,13 @@
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-
+						<!-- this is modal body -->
 						<div class="modal-body" :class="{ 'p-0': full }">
 							<slot name="body">
 								Modal Body
 							</slot>
 						</div>
-
+						<!-- this is modal footer -->
 						<div class="modal-footer" v-if="!hideFooter">
 							<slot name="footer">
 								<button class="btn btn-plain btn-icon" @click="$emit('close')">
