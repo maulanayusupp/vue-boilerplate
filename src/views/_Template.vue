@@ -15,6 +15,7 @@ export default {
 	mounted() {},
 	methods: {},
 	computed: {},
+	watch: {},
 };
 </script>
 
