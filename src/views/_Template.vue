@@ -4,6 +4,7 @@
 
 <script>
 export default {
+	sockets: {},
 	name: 'Template',
 	components: {},
 	props: {},
@@ -11,6 +12,7 @@ export default {
 		return {};
 	},
 	created() {},
+	beforeDestroy() {},
 	destroyed() {},
 	mounted() {},
 	methods: {},
